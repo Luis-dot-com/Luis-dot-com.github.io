@@ -14,6 +14,7 @@ body {
   overflow: auto;
   flex-wrap: wrap;
   word-break: break-word;
+  text-align: center;
 }
 p {
   margin: 0;
@@ -22,32 +23,28 @@ a {
   text-decoration: none;
   color: inherit;
 }
-h3 {
-  margin-top: 0;
-}
 
 .borde {
   border: 7px solid;
   border-color: yellow goldenrod;
 }
 
-.titulo {
+#titulo {
   background-color: var(--colorfondo);
-  margin-top: 0 ;
-  margin-bottom: 2rem;
+  margin: 0 0 2rem 0;
   font-size: 5rem;
+  font-weight: bold;
   color: yellow;
   padding: 1rem;
   display: flex;
   justify-content:space-between;
   align-items: center;
-  text-align: center;
 }
-.estrella {
+.estrellas {
   flex-grow: 1;
   max-width: 10%;
 }
-.audio {
+#audio {
   margin-top: 0;
   display: flex;
   justify-content: center;
@@ -57,45 +54,19 @@ h3 {
 .pagina {
   background-color: var(--colorfondo);
   padding: 2rem;
-  display: flex;
-  flex-direction: column;
   font-size: 20px;
-  /* text-align: center; */
 }
 
-.margen {
-  
+.margen { 
   margin:0 0 2rem 0;
   padding-bottom: 2rem;
   border-bottom: 2px dashed black;
 }
-.margen2 {
-  border-bottom: 4px;
-}
 
-.GrassGirl {
+.letras-amarillas {
   color: yellow;
   margin: 0 0 1rem 0;
-  text-align: center;
 }
-.saludo {
-  text-align: center;
-  font-size: 20px;
-  margin-bottom: 1rem;
-}
-
-.profesora {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-}
-.profesora-t {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
 
 .img-cuadro {
   max-width: 100%;
@@ -112,48 +83,22 @@ h3 {
   max-width: 100%;
 }
 
-
-.introduccion{
-  display: flex;
-  flex-direction: column;
-}
-.introduccion-inicio {
-  font-size: 2rem;
-  text-align: center;
-  margin: 0 0 2rem 0;
-}
-
-.ficha{
+#ficha{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.ficha-t{
+#ficha-li{
   list-style: none;
   font-size: 30px;
-  flex-direction: column;
   align-content: space-between;
+  text-align: start;
 }
 
-
-.etc {
+.fun-tit {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-items: center;
-}
-/* .etc-t {
-  border-top: 1px dashed black;
-  margin: 4rem 0 3rem 0;
-  padding: 2rem;
-} */
-
-.etc-img {
-  display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-
   margin: 2rem 0 2rem 0;
 }
 .img-gif {
@@ -166,11 +111,10 @@ h3 {
   max-width: 100%;
 }
 
-.ver-juegos{
-  display: flex;
-  flex-direction: column;
+.margen-top{
   margin-top: 4rem;
 }
+
 .ver-juegos-ind {
   display: flex;
   flex-direction: column;
@@ -184,33 +128,30 @@ h3 {
   width: 100%;
   margin-top: 2rem;
 }
-.ver-juegos-text {
+.ver-juegos-ind-text {
   display: flex;
   flex-direction: column;
   padding: 5%;
   flex-grow: 1;
 }
 
-.aqui {
+#aqui {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 3rem 0 0 0;
 }
-.aqui2 {
+#aqui2 {
   margin: 0;
 }
-.aquilogo {
-  flex-grow: 1;
-  max-width: 100%;
-}
 
- .ver-dibujos {
+.ver-dibujos {
   display: flex;
-  flex-direction: column;
-
- }
- .ver-dibujos-ind {
+  justify-content: space-evenly;
+  align-items: flex-start;
+  word-break: keep-all;
+}
+.ver-dibujos-ind {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -220,41 +161,13 @@ h3 {
   max-height: 100%;
   margin: 0 0 2rem 0;
  }
-.ver-dibujos-linea {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  word-break: keep-all;
-}
 .ver-dibujos-tit {
   font-size: 90%;
 }
 .ver-dibujos-des {
   font-size: 1rem;
-  color:rgb(0, 53, 0)
 }
 
-
-@media (width < 1000px) {
-  .ficha{
-    flex-direction: column;
-  }
-  .ficha-t{
-    margin: 0;
-    padding: 0 0 2rem 0;
-  }
-  .ver-dibujos-linea{
-    flex-direction: column;
-    align-items: center;
-  }
-  .ver-juegos-ind-c {
-    flex-direction: column;
-  }
-  .titulo{
-    font-size: 3em;
-  }
-}
 #btn{
   width: 200px;
   height: 200px;
@@ -266,7 +179,24 @@ h3 {
   color: red;
   cursor: pointer;
   box-shadow: 0 0 20px 0 black;
+  margin: 0 -2rem 0 -2rem;
 }
 #btn:active{
   font-size: 18px;
+}
+
+@media (width < 1000px) {
+  #ficha, .ver-juegos-ind-c, .ver-dibujos{
+    flex-direction: column;
+  }
+  #ficha-li{
+    margin: 0;
+    padding: 0 0 2rem 0;
+  }
+  .ver-dibujos{
+    align-items: center;
+  }
+  #titulo{
+    font-size: 3em;
+  }
 }
