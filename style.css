@@ -1,8 +1,6 @@
 * {
   box-sizing: border-box;
-}
-
-body {
+} body {
   font-family: "Comic Sans MS", sans-serif;
   background-color: lightgreen;
   background-image: url(Imagenes/general/fondopoke.webp);
@@ -18,17 +16,14 @@ body {
 }
 p {
   margin: 0;
-}
-a {
+} a {
   text-decoration: none;
   color: inherit;
 }
-
 .borde {
   border: 7px solid;
   border-color: yellow goldenrod;
 }
-
 #titulo {
   background-color: var(--colorfondo);
   margin: 0 0 2rem 0;
@@ -39,119 +34,98 @@ a {
   display: flex;
   justify-content:space-between;
   align-items: center;
-}
-.estrellas {
+} .estrellas {
   flex-grow: 1;
   max-width: 10%;
-}
-#audio {
+} #audio {
   margin-top: 0;
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
 }
-
 .pagina {
   background-color: var(--colorfondo);
   padding: 2rem;
   font-size: 20px;
 }
-
 .margen { 
   margin:0 0 2rem 0;
   padding-bottom: 2rem;
   border-bottom: 2px dashed black;
 }
-
 .letras-amarillas {
   color: yellow;
   margin: 0 0 1rem 0;
 }
-
 .img-cuadro {
   max-width: 100%;
   width: 30rem;
   border: 7px solid;
   border-color: yellow goldenrod;
-}
-.img-cuadro-2 {
+} .img-cuadro-2 {
   max-width: 100%;
   width: 25rem;
-}
-.img-cuadro-3 {
+} .img-cuadro-3 {
   width: 15rem;
   max-width: 100%;
 }
-
 #ficha{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-}
-#ficha-li{
+} #ficha-li{
   list-style: none;
   font-size: 30px;
   align-content: space-between;
   text-align: start;
 }
-
 .fun-tit {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin: 2rem 0 2rem 0;
-}
-.img-gif {
+} .img-gif {
   width: 20%;
   max-width: 100%;
   min-width: 0%;
-}
-.img-tit {
+} .img-tit {
   width: 20rem;
   max-width: 100%;
 }
-
 .margen-top{
   margin-top: 4rem;
 }
-
 .ver-juegos-ind {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.ver-juegos-ind-c {
+} .ver-juegos-ind-c {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
   margin-top: 2rem;
-}
-.ver-juegos-ind-text {
+} .ver-juegos-ind-text {
   display: flex;
   flex-direction: column;
   padding: 5%;
   flex-grow: 1;
 }
-
 #aqui {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 3rem 0 0 0;
-}
-#aqui2 {
+} #aqui2 {
   margin: 0;
 }
-
 .ver-dibujos {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
   word-break: keep-all;
-}
-.ver-dibujos-ind {
+} .ver-dibujos-ind {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -160,14 +134,11 @@ a {
   max-width: 100% ;
   max-height: 100%;
   margin: 0 0 2rem 0;
- }
-.ver-dibujos-tit {
+ } .ver-dibujos-tit {
   font-size: 90%;
-}
-.ver-dibujos-des {
+} .ver-dibujos-des {
   font-size: 1rem;
 }
-
 #btn{
   width: 200px;
   height: 200px;
@@ -180,11 +151,9 @@ a {
   cursor: pointer;
   box-shadow: 0 0 20px 0 black;
   margin: 0 -2rem 0 -2rem;
-}
-#btn:active{
+} #btn:active{
   font-size: 18px;
 }
-
 @media (width < 1000px) {
   #ficha, .ver-juegos-ind-c, .ver-dibujos{
     flex-direction: column;
