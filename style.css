@@ -63,11 +63,11 @@ p {
   border: 7px solid;
   border-color: yellow goldenrod;
 } .img-cuadro-2 {
-  max-width: 100%;
   width: 25rem;
 } .img-cuadro-3 {
   width: 15rem;
-  max-width: 100%;
+} .img-cuadro-4 {
+  width: 238px;
 }
 #ficha{
   display: flex;
